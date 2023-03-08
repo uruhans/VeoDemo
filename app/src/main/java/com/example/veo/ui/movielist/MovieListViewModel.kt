@@ -1,4 +1,4 @@
-package com.example.veo.ui
+package com.example.veo.ui.movielist
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -34,7 +34,7 @@ class MovieListViewModel(
                 }
                 .collect {
                     val weeklyItems = it
-                    _uiState.value = UiState.Success(weeklyItems.items)
+                    _uiState.value = UiState.Success(weeklyItems.results)
                 }
         }
     }

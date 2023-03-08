@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">VeoDemo</string>
+    <string name="empty_title">No title available</string>
 </resources>

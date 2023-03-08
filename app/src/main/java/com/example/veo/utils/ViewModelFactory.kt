@@ -3,7 +3,7 @@ package com.example.veo.utils
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.veo.repository.ApiHelper
-import com.example.veo.ui.MovieListViewModel
+import com.example.veo.ui.movielist.MovieListViewModel
 
 class ViewModelFactory(
     private val apiHelper: ApiHelper,
