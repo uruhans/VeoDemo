@@ -12,6 +12,7 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.veo.databinding.FragmentMovieListBinding
@@ -63,6 +64,9 @@ class MovieListFragment : Fragment() {
 
     private fun adapterOnClick(movie: TmDbItem) {
         Log.d("xxx", "Pressed ${movie.id}")
+        movie.id?.let {
+            findNavController().navigate(MovieListFragmentDirections.actionMovieListFragmentToDetailFragment(it))
+        }
     }
 
     @SuppressLint("NotifyDataSetChanged")

@@ -6,5 +6,5 @@ import kotlinx.coroutines.flow.Flow
 
 interface ApiHelper {
     fun getMovies(): Flow<WeeklyItems>
-    fun getMovieDetails(): Flow<MovieDetail>
+    fun getMovieDetails(id: Int): Flow<MovieDetail>
 }

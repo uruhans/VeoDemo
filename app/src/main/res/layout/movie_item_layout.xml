@@ -27,6 +27,6 @@
                 app:layout_constraintStart_toEndOf="@+id/imageViewBackDrop"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
-            tools:text="Here we go!" />
+                tools:text="Here we go!" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
